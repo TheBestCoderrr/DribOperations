@@ -18,6 +18,24 @@ void Menu(Fraction &FirstDrib,Fraction &SecondDrib, Fraction &ResultDrib) {
 				ResultDrib = FirstDrib.Sum(SecondDrib);
 				ResultDrib.PrintDrib(ResultDrib);
 				break;
+			case 2:
+				FirstDrib.SetDrib(FirstDrib);
+				SecondDrib.SetDrib(SecondDrib);
+				ResultDrib = FirstDrib.Riz(SecondDrib);
+				ResultDrib.PrintDrib(ResultDrib);
+				break;
+			case 3:
+				FirstDrib.SetDrib(FirstDrib);
+				SecondDrib.SetDrib(SecondDrib);
+				ResultDrib = FirstDrib.Multiply(SecondDrib);
+				ResultDrib.PrintDrib(ResultDrib);
+				break;
+			case 4:
+				FirstDrib.SetDrib(FirstDrib);
+				SecondDrib.SetDrib(SecondDrib);
+				ResultDrib = FirstDrib.Dil(SecondDrib);
+				ResultDrib.PrintDrib(ResultDrib);
+				break;
 			default:
 				cout << "Error!" << endl;
 				break;
